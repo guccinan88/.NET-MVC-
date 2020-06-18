@@ -1,0 +1,7 @@
+@*先引入命名空間*@
+using System.ComponentModel.DataAnnotations;
+
+public class Test{
+  [Display(Name="View頁面所要顯示的欄位名稱")]
+  public int ID{get;set;}@*與Display對應的欄位內容*@
+}
