@@ -12,7 +12,7 @@
 <code>mail.To.Add(mailTo);</code>//收信郵件帳號<br/>
 <code>mail.Subject = subject;</code>//主旨<br/>
 <code>mail.Body = body;</code>//郵件內容<br/>
-<code>mail.IsBodyHtml = false;</code>//是否使用HTML格式<br/>
+<code>mail.IsBodyHtml = false;</code>//是否使用HTML格式，若沒使用HTML標籤會被當成純文字輸出<br/>
 <code>smtp.Credentials = new NetworkCredential(emailFrom, password);</code>//寄信端郵件驗證，有些伺服器需要驗證以防信件仿冒<br/>
 <code>smtp.EnableSsl = enableSSL;</code>//是否使用SSL<br/>
 <code>smtp.Send(mail);</code>//送出信件<br/>
